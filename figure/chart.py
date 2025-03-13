@@ -105,5 +105,34 @@ def create_bar_chart(df, column_name, mapping, title):
     return fig
 
 
-def pie_chart_by_max_line():
-    pass
+def pie_chart_by_max_line(df, mapping = ma_linh_kien):    
+    custom_label = df[:, 0].map(mapping)
+
+    df['custom label'] = custom_label
+
+    temp = df.copy()
+
+    df = df.groupby(by=['custom label'], as_index=False)['Line'].count()
+
+    df = df.sort_values('Line', ascending=False)
+
+    max_val = df.iloc[0,0]
+
+    temp = temp[temp['custom label'] == max_val]
+
+    temp = temp['Line'].value_counts().reset_index()
+
+    temp.columns = ['Line', 'Count']
+
+    fig = px.pie(
+        temp,
+        values = 'Count',
+        names = 'Line',
+    )
+    fig.update_traces(
+        textinfo = 'percent+label',
+        textposition = 'inside',
+        textfont_size = 14
+    )
+
+    return fig
