@@ -73,7 +73,7 @@ fig.update_traces(
     width = 0.5
 )
 fig.update_traces(texttemplate='%{y}', textposition='outside')
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, use_container_width=True, width=500)
 
 cl1, cl2 = st.columns(2)
 
