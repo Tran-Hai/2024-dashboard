@@ -30,7 +30,7 @@ with col2:
     figure_be = create_bar_chart(be_df, 'LKDB', ma_linh_kien, 'BE')
     st.plotly_chart(figure_be, use_container_width=True, key = 'bar_be')
     new_figure_be = pie_chart_by_max_line(new_be_df, ma_linh_kien)
-    st.plotly_chart(new_figure_be, use_container_width=True, key = 'new_bar_be)
+    st.plotly_chart(new_figure_be, use_container_width=True, key = 'new_bar_be')
 
 with col3:
     new_bm_df = bm_df[['LKDB', 'Line']]
