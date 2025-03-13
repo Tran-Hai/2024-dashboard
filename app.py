@@ -64,7 +64,7 @@ fig.update_xaxes(
 )
 fig.update_yaxes(
     showticklabels = False,
-    title_text = ''
+    title_text = '',
     showgrid = False
 )
 fig.update_traces(
