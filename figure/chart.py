@@ -134,5 +134,7 @@ def pie_chart_by_max_line(df, mapping):
         textposition = 'inside',
         textfont_size = 14
     )
-
+    fig.update_layout(
+        showlegend = False
+    )
     return fig
