@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import plotly.express as px
 from data.DataPreprocessing import data_preprocessing
 from figure.chart import create_pie_chart, create_bar_chart
 from utils.constants import ma_hien_tuong, ma_nguyen_nhan, ma_nguyen_nhan_goc, ma_linh_kien
