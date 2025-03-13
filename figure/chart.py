@@ -105,7 +105,7 @@ def create_bar_chart(df, column_name, mapping, title):
     return fig
 
 
-def pie_chart_by_max_line(df, mapping = ma_linh_kien):    
+def pie_chart_by_max_line(df, mapping):    
     custom_label = df[:, 0].map(mapping)
 
     df['custom label'] = custom_label
