@@ -103,3 +103,7 @@ def create_bar_chart(df, column_name, mapping, title):
     )
 
     return fig
+
+
+def pie_chart_by_max_line():
+    pass
