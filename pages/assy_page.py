@@ -22,7 +22,7 @@ with col1:
     new_ba_df = ba_df[['LKDB', 'Line']]
     figure_ba = create_bar_chart(ba_df, 'LKDB', ma_linh_kien, 'BA')
     st.plotly_chart(figure_ba, use_container_width=True, key = 'bar_ba')
-    new_figure_ba = pie_chart_by_max_line(new_ba_df)
+    new_figure_ba = pie_chart_by_max_line(new_ba_df, ma_linh_kien)
     st.plotly_chart(new_figure_ba, use_container_width=True, key = 'new_bar_ba')
 
 with col2:
