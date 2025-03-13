@@ -57,6 +57,20 @@ line_df = df2['Line'].value_counts().reset_index()
 line_df.columns = ['Line', 'Count']
 
 fig = px.bar(line_df, x = 'Line', y = 'Count', title = 'Incident Frequency of Each Line')
+fig.update_xaxes(
+    showticklabels = True,
+    tickangle = -45,
+    title_text = ''
+)
+fig.update_yaxes(
+    showticklabels = False,
+    title_text = ''
+    showgrid = False
+)
+fig.update_traces(
+    hovertemplate = '%{x}<br>%{y}',
+    width = 0.5
+)
 st.plotly_chart(fig, use_container_width=True)
 
 cl1, cl2 = st.columns(2)
