@@ -16,7 +16,7 @@ st.title(":bar_chart: Data Visualization")
 st.markdown("Welcome to the Data Visualization app! Choose a dataset from the dropdown menu and visualize it using various chart types.")
 
 
-file_path = "./BMFY24.xlsx"
+file_path = "./BMFY241.xlsx"
 
 # df1 = data_preprocessing(file_path, "CHUNG")
 # df2 = data_preprocessing(file_path, "ASSY")
