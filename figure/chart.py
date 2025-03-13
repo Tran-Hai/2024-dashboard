@@ -99,7 +99,7 @@ def create_bar_chart(df, column_name, mapping, title):
         text = f'Total: {total_value}',
         showarrow = False,
         font = dict(size=19),
-        align = 'left'
+        align = 'center'
     )
 
     return fig
