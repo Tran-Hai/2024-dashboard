@@ -61,7 +61,7 @@ fig.update_xaxes(
     showticklabels = True,
     tickangle = -45,
     title_text = '',
-    tickfont = dict(size=10)
+    tickfont = dict(size=10, color = 'black')
 )
 fig.update_yaxes(
     showticklabels = False,
