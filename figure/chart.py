@@ -130,7 +130,7 @@ def pie_chart_by_max_line(df, mapping):
         names = 'Line',
     )
     fig.update_traces(
-        textinfo = 'percent+label',
+        textinfo = 'label+value',
         textposition = 'inside',
         textfont_size = 14
     )
