@@ -70,9 +70,12 @@ fig.update_yaxes(
 )
 fig.update_traces(
     hovertemplate = '%{x}<br>%{y}',
-    width = 0.5
+    width = 0.5,
+    template = '%{y}',
+    textposition = 'outside',
+    textfont = dict(size=10, color='black', family='Arial', weight='bold')
 )
-fig.update_traces(texttemplate='%{y}', textposition='outside')
+
 st.plotly_chart(fig, use_container_width=True, width=500)
 
 cl1, cl2 = st.columns(2)
