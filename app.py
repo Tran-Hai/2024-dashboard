@@ -73,7 +73,7 @@ fig.update_traces(
     width = 0.5,
     template = '%{y}',
     textposition = 'outside',
-    textfont = dict(size=10, color='black', family='Arial', weight='bold')
+    #textfont = dict(size=10, color='black', family='Arial', weight='bold')
 )
 
 st.plotly_chart(fig, use_container_width=True, width=500)
