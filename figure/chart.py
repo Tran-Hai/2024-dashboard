@@ -53,6 +53,8 @@ def create_bar_chart(df, column_name, mapping, title):
     
     grouped_df = grouped_df.sort_values('Group', ascending=False)  # Sort the data in descending order by Group column
 
+    total_value = grouped_df['Group'].sum()
+
     fig = px.bar(grouped_df, x='custom label', y='Group', template='seaborn', width=500, height=400)
 
     fig.update_xaxes(
@@ -88,5 +90,16 @@ def create_bar_chart(df, column_name, mapping, title):
             ),
             align = 'center'
         )
+
+    fig.add_annotation(
+        x = 1.1,
+        y = 1.05,
+        xref = 'paper',
+        yref = 'paper',
+        text = f'Total: {total_value}',
+        showarrow = False,
+        font = dict(size=19),
+        align = 'left'
+    )
 
     return fig
