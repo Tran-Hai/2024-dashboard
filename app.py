@@ -71,9 +71,9 @@ fig.update_yaxes(
 fig.update_traces(
     hovertemplate = '%{x}<br>%{y}',
     width = 0.5,
-    template = '%{y}',
+    texttemplate = '%{y}',
     textposition = 'outside',
-    #textfont = dict(size=10, color='black', family='Arial', weight='bold')
+    textfont = dict(size=10, color='black', family='Arial', weight='bold')
 )
 
 st.plotly_chart(fig, use_container_width=True, width=500)
