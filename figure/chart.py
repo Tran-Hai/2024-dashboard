@@ -92,13 +92,13 @@ def create_bar_chart(df, column_name, mapping, title):
         )
 
     fig.add_annotation(
-        x = 1.1,
-        y = 1.05,
+        x = 0.5,
+        y = 1.1,
         xref = 'paper',
         yref = 'paper',
         text = f'Total: {total_value}',
         showarrow = False,
-        font = dict(size=19),
+        font = dict(size=15),
         align = 'center'
     )
 
