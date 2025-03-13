@@ -106,7 +106,7 @@ def create_bar_chart(df, column_name, mapping, title):
 
 
 def pie_chart_by_max_line(df, mapping):    
-    custom_label = df[:, 0].map(mapping)
+    custom_label = df.iloc[: , 0].map(mapping)
 
     df['custom label'] = custom_label
 
