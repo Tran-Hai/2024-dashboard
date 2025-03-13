@@ -60,7 +60,8 @@ fig = px.bar(line_df, x = 'Line', y = 'Count', title = 'Incident Frequency of Ea
 fig.update_xaxes(
     showticklabels = True,
     tickangle = -45,
-    title_text = ''
+    title_text = '',
+    tickfont = dict(size=10)
 )
 fig.update_yaxes(
     showticklabels = False,
