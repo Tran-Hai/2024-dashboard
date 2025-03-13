@@ -71,6 +71,7 @@ fig.update_traces(
     hovertemplate = '%{x}<br>%{y}',
     width = 0.5
 )
+fig.update_traces(texttemplate='%{y}', textposition='outside')
 st.plotly_chart(fig, use_container_width=True)
 
 cl1, cl2 = st.columns(2)
