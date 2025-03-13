@@ -7,7 +7,7 @@ st.set_page_config(layout = "wide", initial_sidebar_state = "expanded")
 
 file_path = "./BMFY24.xlsx"
 
-df = data_preprocessing(file_path, "ASSY")
+df = data_preprocessing(file_path, "PROCESS")
 
 
 ba_df = df[df['LKDB'].str.startswith('BA')]
